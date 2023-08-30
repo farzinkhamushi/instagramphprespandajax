@@ -1,0 +1,18 @@
+body.black_theme{
+    background-color: #444;
+}
+
+article.black_theme{
+    background-color: #6d6d6d !important;
+    color: #fff;
+}
+
+body{
+    background-color: #eee;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto ;
+}

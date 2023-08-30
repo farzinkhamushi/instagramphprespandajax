@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jq3/jquery-3.2.1.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Store</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <ul class="social">
+                <li><a href="" class="fb">Facebook</a></li>
+                <li><a href="" class="tw">twitter</a></li>
+            </ul>
+        </nav>
+
+        <div class="them" style="margin: 20px;">
+            <div>
+                <span>Layout: </span>
+                <a class="stack" style="color:#00b7ff;cursor: pointer;"><img width="17px" src="stack.png" alt="" srcset=""></a>
+                <a class="grid" style="color:#00b7ff;cursor: pointer;"><img width="17px" src="grid.png" alt="" srcset=""></a>
+            </div>
+            <div>
+                <a class="black_theme" style="color:#00b7ff;cursor: pointer;"><img width="17px" src="moon.png" alt="" srcset=""></a>
+                <a class="light_theme" style="color:#00b7ff;cursor: pointer;"><img width="17px" src="sun.png" alt="" srcset=""></a>
+            </div>
+        </div>
+
+        <section id="blocks">
+            <article>
+                <img width="100%" src="t.jpg" alt="" srcset="">
+                <h2>I pity the fool...</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora assumenda modi, dolore doloremque sequi laborum. Debitis culpa fugiat vero expedita labore. Excepturi pariatur fugiat molestiae culpa necessitatibus. Sequi, veritatis ex.</p>
+            </article>
+            <article>
+                <img width="100%" src="t.jpg" alt="" srcset="">
+                <h2>Get to the chopper...</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora assumenda modi, dolore doloremque sequi laborum. Debitis culpa fugiat vero expedita labore. Excepturi pariatur fugiat molestiae culpa necessitatibus. Sequi, veritatis ex.</p>
+            </article>
+            <article>
+                <img width="100%" src="t.jpg" alt="" srcset="">
+                <h2>what's a horse doing on a spaceship...?</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora assumenda modi, dolore doloremque sequi laborum. Debitis culpa fugiat vero expedita labore. Excepturi pariatur fugiat molestiae culpa necessitatibus. Sequi, veritatis ex.</p>
+            </article>
+            <article>
+                <img width="100%" src="t.jpg" alt="" srcset="">
+                <h2>I pity the fool...</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora assumenda modi, dolore doloremque sequi laborum. Debitis culpa fugiat vero expedita labore. Excepturi pariatur fugiat molestiae culpa necessitatibus. Sequi, veritatis ex.</p>
+            </article>
+            <article>
+                <img width="100%" src="t.jpg" alt="" srcset="">
+                <h2>Get to the chopper...</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora assumenda modi, dolore doloremque sequi laborum. Debitis culpa fugiat vero expedita labore. Excepturi pariatur fugiat molestiae culpa necessitatibus. Sequi, veritatis ex.</p>
+            </article>
+            <article>
+                <img width="100%" src="t.jpg" alt="" srcset="">
+                <h2>what's a horse doing on a spaceship...?</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora assumenda modi, dolore doloremque sequi laborum. Debitis culpa fugiat vero expedita labore. Excepturi pariatur fugiat molestiae culpa necessitatibus. Sequi, veritatis ex.</p>
+            </article>
+        </section>
+    </div>
+
+    <script>
+        $("a.stack").on("click",function(){
+            $("article").addClass("stack");
+        });
+        $("a.grid").on("click",function(){
+            $("article").removeClass("stack");
+        });
+        $("a.black_theme").on("click",function(){
+            $("body").addClass("black_theme");
+            $("body").removeClass("light_theme");
+            $("article").addClass("black_theme");
+            $("article").removeClass("light_theme");
+        });
+        $("a.light_theme").on("click",function(){
+            $("body").addClass("light_theme");
+            $("body").removeClass("black_theme");
+            $("article").addClass("light_theme");
+            $("article").removeClass("black_theme");
+        });
+    </script>
+</body>
+</html>
